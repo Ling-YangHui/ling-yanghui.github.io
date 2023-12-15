@@ -117,9 +117,10 @@ function copyToClipboard(text, pubId, cslTemplateType) {
 <template>
   <h2>📃 Publications</h2>
   <p>
-    <b>bold</b>: myself.
-    <sup>*</sup>: corresponding author(s).
-    <u>underline</u>: equal contributions.
+    Notations:&emsp;
+    <b>bold</b>->myself&emsp;<b>|</b>&emsp;
+    <sup>*</sup>->corresponding author(s)&emsp;<b>|</b>&emsp;
+    <u>underline</u>->equal contributions
   </p>
   <ul class="pub-list" reversed>
     <li v-for="pub in pubArr" :key="pub.entry.id">

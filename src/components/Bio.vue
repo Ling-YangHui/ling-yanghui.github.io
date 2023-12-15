@@ -13,10 +13,10 @@ const description = computed(() => {
   <div class="row items-align-center">
     <div class="col-f4">
       <h1>{{ metaContent.name }}</h1>
-      <div v-html="description"></div>
+      <div style="font-size: 13.5pt;" v-html="description"></div>
     </div>
     <div>
-      <img class="col" src="../assets/personal-photo.jpg" width="120" alt="personal photo">
+      <img class="col" src="../assets/personal-photo.jpg" width="150" alt="personal photo" style="margin: 20px 10px 0px 10px;">
     </div>
   </div>
   <div class="row flex-start">

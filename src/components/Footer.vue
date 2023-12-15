@@ -7,9 +7,8 @@ import LastUpdate from './LastUpdate.vue';
         <hr>
         <p>
           Links:
-          <a href="https://chen-wenliang.github.io/" target="_blank">Wenliang Chen</a>
-          | <a href="https://cv.hqzhou.com/" target="_blank">Houquan Zhou</a>
-          | <a href="https://yzhangcs.github.io/" target="_blank">Yu Zhang</a>
+          <a href="https://Ling-YangHui.github.io/" target="_blank">Yang Zou</a>
+          | <a href="http://tns.thss.tsinghua.edu.cn/sun/index.html" target="_blank">SUN Group</a>
         </p>
         <p>
           Made by Tong Zhu w/ ❤️ <LastUpdate />

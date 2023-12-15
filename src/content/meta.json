@@ -1,11 +1,10 @@
 {
-    "name": "Tong Zhu (朱桐)",
-    "description": "I'm a Ph.D. student at [Soochow University](http://eng.suda.edu.cn/), advised by [Wenliang Chen](https://chen-wenliang.github.io/). I received my B.S. degree from [Guizhou University](https://www.gzu.edu.cn/en/).<br>My current research interests include Information Extraction and Knowledge Acquisition.",
+    "name": "Yang Zou (邹扬)",
+    "description": "**Biography:** I'm a Ph.D. student at [Tsinghua University](http://www.tsinghua.edu.cn/), advised by [Yuan He](http://tns.thss.tsinghua.edu.cn/sun/members/YuanHe/). And now I am a member of [The System and Ubiquitous Networking Group (SUN)](http://tns.thss.tsinghua.edu.cn/sun/). I received my B.S. degree in College of Electronic & Information Engineering from Beijing University of Aeronautics and Astronautics (Beihang University) in 2023.<br>**Research Interests:** Wireless Networking, Low power IoT and RF Computing.<br>**Contact Me:** zouy23@mails.tsinghua.edu.cn; zouyang.yh@gmail.com",
     "contact": {
-        "Github": {"icon": "fa fa-github", "url": "https://github.com/Spico197"},
-        "Google Scholar": {"icon": "ai ai-google-scholar", "url": "https://scholar.google.com/citations?user=V1gIjasAAAAJ&hl=en"},
-        "Semantic Scholar": {"icon": "ai ai-semantic-scholar", "url": "https://www.semanticscholar.org/author/Tong-Zhu/1914586128"},
-        "Website": {"icon": "fa fa-link", "url": "https://spico197.github.io/"},
-        "Email": {"icon": "fa fa-envelope", "url": "mailto:tzhu1997@outlook.com"}
+        "Github": {"icon": "fa fa-github", "url": "https://github.com/Ling-YangHui"},
+        "Website": {"icon": "fa fa-link", "url": "https://Ling-YangHui.github.io/"},
+        "Email": {"icon": "fa fa-envelope", "url": "mailto:zouy23@mails.tsinghua.edu.cn"},
+        "Secondary Email": {"icon": "fa fa-envelope", "url": "mailto:zouyang.yh@gmail.com"}
     }
 }
