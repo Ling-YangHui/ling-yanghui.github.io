@@ -1,7 +1,8 @@
 /* @import "https://cdn.simplecss.org/simple.min.css" */
 @import "https://unpkg.com/boltcss/bolt.min.css";
-@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+/* @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"; */
 @import "https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css";
+@import "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css";
 @import "./grid.css";
 @import "./position.css";
 
@@ -121,6 +122,16 @@ p.note {
 
 .badge-code:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+.badge-pdf {
+    color: white;
+    background-color: #eeb90a;
+}
+
+.badge-pdf:hover {
+    color: white;
+    background-color: #a07d08;
 }
 
 .badge-video {

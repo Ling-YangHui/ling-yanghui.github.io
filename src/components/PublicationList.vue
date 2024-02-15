@@ -6,6 +6,7 @@ import SlidesBadge from './badges/SlidesBadge.vue'
 import VideoBadge from './badges/VideoBadge.vue'
 import CodeBadge from './badges/CodeBadge.vue'
 import DemoBadge from './badges/DemoBadge.vue'
+import PdfBadge from './badges/PdfBadge.vue'
 import { AclCsl, Gb7714Csl } from '../utils'
 
 import pubJson from '../content/pub.json'
@@ -124,21 +125,22 @@ function copyToClipboard(text, pubId, cslTemplateType) {
   </p>
   <ul class="pub-list" reversed>
     <li v-for="pub in pubArr" :key="pub.entry.id">
-      <a :href="pub.entry.url" target="_blank">{{ pub.entry.title }}</a><br>
+      <a :href="pub.entry.url" target="_blank" style="font-size: 14pt;">{{ pub.entry.title }}</a><br>
       <p class="pub" v-html="pub.entry.authors"></p>
       <p class="pub"><em>{{ pub.entry["container-title"] }}</em>. {{ pub.entry.issued["date-parts"][0][0] }}.</p>
       <p class="pub note" v-if="pub.note">{{ pub.note }}</p>
-      <!-- <p class="pub" v-if="pub.note" v-html="pub.note"></p> -->
+      <p class="pub" v-if="pub.note" v-html="pub.note"></p>
       <div>
         <div>
-          <a class="badge badge-abs" @click="showFlag[pub.entry.id].abs = !showFlag[pub.entry.id].abs">abs</a>
-          <a class="badge badge-bib" @click="showFlag[pub.entry.id].bib = !showFlag[pub.entry.id].bib">bib</a>
+          <a class="badge badge-abs" @click="showFlag[pub.entry.id].abs = !showFlag[pub.entry.id].abs">Abstract</a>
+          <a class="badge badge-bib" @click="showFlag[pub.entry.id].bib = !showFlag[pub.entry.id].bib">BibTex</a>
+          <PdfBadge :pdfUrl="pub.resources.pdf"/>
           <SlidesBadge :slidesUrl="pub.resources.slides" />
           <VideoBadge :videoUrl="pub.resources.video" />
           <CodeBadge :codeUrl="pub.resources.code" />
           <DemoBadge :demoUrl="pub.resources.demo" />
         </div>
-        <p class="text-block" v-if="showFlag[pub.entry.id].abs">{{ pub.entry.abstract }}</p>
+        <p class="text-block" v-if="showFlag[pub.entry.id].abs">{{ pub.abstract }}</p>
         <div class="text-block" v-if="showFlag[pub.entry.id].bib">
           <button class="bib" @click.prevent="copyToClipboard(pub.bibtex, pub.entry.id, 'BibTeX')">Copy BibTeX</button>
           <button class="bib" @click.prevent="copyToClipboard(pub.acl, pub.entry.id, 'ACL')">Copy ACL</button>
