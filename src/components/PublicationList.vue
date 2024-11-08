@@ -153,3 +153,4 @@ function copyToClipboard(text, pubId, cslTemplateType) {
     </li>
   </ul>
 </template>
+

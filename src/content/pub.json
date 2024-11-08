@@ -1,6 +1,6 @@
 [
     {
-        "bibtex": "@INPROCEEDINGS{Trident,\n    author={Zou, Yang and Na, Xin and Guo, Xiuzhen and Sun, Yimiao and He, Yuan},\n    booktitle={IEEE International Conference on Computer Communications 2024 (INFOCOM 2024)}, \n    title={TRIDENT: Interference Avoidance in Multi-reader Backscatter Network Via Frequency-space Division}, \n    year={2024},\n    volume={},\n    number={},\n    pages={},\n    keywords={},\n    ISSN={},\n    month={May},\n    }",
+        "bibtex": "@INPROCEEDINGS{zou2024trident,\n    author={Zou, Yang and Na, Xin and Guo, Xiuzhen and Sun, Yimiao and He, Yuan},\n    booktitle={IEEE International Conference on Computer Communications 2024 (INFOCOM 2024)}, \n    title={TRIDENT: Interference Avoidance in Multi-reader Backscatter Network Via Frequency-space Division}, \n    year={2024},\n    volume={},\n    number={},\n    pages={},\n    keywords={},\n    ISSN={},\n    month={May},\n    }",
         "authors": {
             "boldAuthors": ["Yang Zou"],
             "correspondingAuthors": ["Yuan He"],
@@ -9,12 +9,30 @@
         "released": true,
         "note": "",
         "resources": {
-            "pdf": "./public/paper/Trident.pdf",
+            "pdf": "./public/paper/Trident CONF.pdf",
             "slides": null,
             "video": null,
             "code": null,
             "demo": null
         },
         "abstract": "Backscatter is an enabling technology for battery-free sensing in industrial IoT applications. For the purpose of full coverage of numerous tags in the deployment area, one often needs to deploy multiple readers, each of which is to communicate with tags within its communication range. But the actual backscattered signals from a tag are likely to reach a reader outside its communication range, causing undesired interference. Conventional approaches for interference avoidance, either TDMA or CSMA based, separate the readers' media accesses in the time dimension and suffer from limited network throughput. In this paper, we propose Trident, a novel backscatter tag design that enables interference avoidance with frequency-space division. By incorporating a tunable bandpass filter and multiple terminal loads, a Trident tag is able to detect its channel condition and adaptively adjust the frequency band and the power of its backscattered signals, so that all the readers in the network can operate concurrently without being interfered. We implement Trident and evaluate its performance under various settings. The results demonstrate that Trident enhances the network throughput by 3.18, compared to the TDMA based scheme."
+    },
+    {
+        "bibtex": "@ARTICLE{zou2024tridentconf, \n    author={Zou, Yang and Na, Xin and Sun, Yimiao and Yuan, He},\n    journal={IEEE/ACM Transactions on Networking (ToN)}, \n    title={TRIDENT: Interference Avoidance in Multi-reader Backscatter Network Via Frequency-space Division}, \n    year={2024},\n    volume={},\n    number={},\n    pages={},\n    keywords={},\n    ISSN={},\n    month={May},\n    }",
+        "authors": {
+            "boldAuthors": ["Yang Zou"],
+            "correspondingAuthors": ["Yuan He"],
+            "equalContributionAuthors": null
+        },
+        "released": true,
+        "note": "",
+        "resources": {
+            "pdf": "./public/paper/Trident TRANS.pdf",
+            "slides": null,
+            "video": null,
+            "code": null,
+            "demo": null
+        },
+        "abstract": "Backscatter is a key technology for battery-freesensing in industrial IoT applications. To fully cover numeroustags in the deployment area, one often needs to deploy multiplereaders, each of which communicates with tags within its commu-nication range. However, the actual backscattered signals froma tag are likely to reach a reader outside its communicationrange and cause interference. Conventional TDMA or CSMAbased approaches for interference avoidance separate readers'media access in time, leading to limited network throughput. Inthis paper, we propose Trident, a novel backscatter design thatenables interference avoidance via frequency-space division. Byincorporating a tunable bandpass filter and multiple terminalloads, a Trident tag can detect its channel condition and adap-tively adjust the frequency and the power of its backscatteredsignals. We further propose a frequency assignment algorithm forthe readers. With these designs, all the readers in the networkcan operate concurrently without being interfered. We implementTrident and evaluate its performance under various settings.The results demonstrate that Trident enhances the networkthroughput by 3.18x, compared to the TDMA-based scheme."
     }
 ]
